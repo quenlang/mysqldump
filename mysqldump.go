@@ -184,6 +184,7 @@ func getCreateTableSQL(db *sql.DB, table string) (string, error) {
 	}
 	// IF NOT EXISTS
 	createTableSQL = strings.Replace(createTableSQL, "CREATE TABLE", "CREATE TABLE IF NOT EXISTS", 1)
+	createTableSQL = strings.ReplaceAll(createTableSQL, ";", ",")
 	return createTableSQL, nil
 }
 
