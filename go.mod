@@ -1,4 +1,4 @@
-module github.com/jarvanstack/mysqldump
+module github.com/quenlang/mysqldump
 
 go 1.18
 
